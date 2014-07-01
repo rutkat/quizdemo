@@ -1,0 +1,17 @@
+<h1>Enter Questions</h1>
+  <p>Total Questions: {{getTotal()}}</p>
+<ul>
+    <li ng-repeat="q in quiz">
+        <strong>Q:</strong> {{q.q}} &ndash; <strong>A:</strong> {{q.a}}
+    </li>
+</ul>
+<form name="quizForm" novalidate>
+    Question:<input type="text" ng-model="formQuestion" required ng-minlength=3 />
+    Answer:<input type="text" ng-model="formAnswer" required ng-minlength=1 />
+    <br/>
+</form>
+<div>
+    <button class="btn" ng-click="addItem(formQuestion, formAnswer)">Add</button>
+    <button class="btn" ng-click="removeLast()">Remove</button>
+</div>
+<a href="#/play" title="play">&gt;</a>    

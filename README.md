@@ -9,3 +9,5 @@ This is an app which allows the user to create a list of questions with answers.
 * Uses a variety of AngularJS directives
 * Uses AngularJS animations with CSS3
 * Helps you memorize questions and answers
+
+To play the demo go to http://runastartup.com/quizdemo/

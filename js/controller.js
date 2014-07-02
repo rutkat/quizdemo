@@ -1,4 +1,4 @@
-app.controller('MainCtrl', function(Quiz, $scope, $timeout, $location, cacheService){
+app.controller('MainCtrl', function(Quiz, $scope, $timeout, $location){
 
   $scope.quiz    = $scope.quiz || Quiz.getData();
   $scope.counter = $scope.counter || 0;

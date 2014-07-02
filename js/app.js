@@ -9,8 +9,6 @@ app.config(['$routeProvider', function ($routeProvider) {
 
 }]);
 
-//var quiz = [{q: 'Are you ready?', a: 'yes'}, {q: 'second question?', a: 'no'}];
-
 app.factory('Quiz', function() {
 
     var data = [{q: 'Are you ready?', a: 'yes'}];

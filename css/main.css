@@ -73,7 +73,7 @@
 		background-color: limegreen;
 		font-size: .8em;
 		color: #fff;
-		border: none;
+		border: 1px dashed #FFF;
 	}
 	input:active {
 		border: none;
@@ -90,7 +90,6 @@
 		background-color: limegreen;
 		font-size: 1.8em;
 		color: #fff;
-		border: 1px dashed #FFF;
 	}
 	.flip {
 	  -webkit-transition:0.5s;

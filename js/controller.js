@@ -49,7 +49,7 @@ app.controller('MainCtrl', function(Quiz, $scope, $timeout, $location){
 
     // for verfying user input
     $scope.isCorrect = function($value){
-      return $value === this.quiz[this.counter].a ? this.quiz[this.counter].a : false;
+      return $value.toLowerCase()  === this.quiz[this.counter].a.toLowerCase() ? this.quiz[this.counter].a : false;
     }    
 
     // answer for input comparision

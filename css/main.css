@@ -45,7 +45,7 @@
 		margin: 0 auto;
 		padding: 20px;
 		min-height: 300px;
-		margin-top: 12%;
+		margin-top: 7%;
 		width: 100%;
 		min-width: 400px;
 	}
@@ -111,8 +111,8 @@
   	  opacity:1;
 	}
 	.ng-leave {
-	   -webkit-transition:0.25s all;
- 		 transition:0.25s all;
+	   -webkit-transition:0.2s all;
+ 		 transition:0.2s all;
 	}
 	.ng-enter {
 	   -webkit-transition:1s all;

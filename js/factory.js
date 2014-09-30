@@ -9,54 +9,38 @@ app.factory('Quiz', function() {
     };
 });
 
+app.factory('storageService', function($rootScope) {
 
-app.factory('storageService', function ($rootScope) {
+	function storageSupported() {
+		try {
+			return 'localStorage' in window && window['localStorage'] !== null;
+		}
+		catch (e) {
+			console.log(e);
+			return false;
+		}
+	}
 
-    function storageSupported() {
-        try {
-            return 'localStorage' in window && window['localStorage'] !== null;
-        } catch (e) {
-            return false;
-        }
-    }
+	if (storageSupported()) {
+		return {
 
-    if (storageSupported) {
-        return {
-            
-            get: function (key) {
-               return localStorage.getItem(key);
-            },
+			get: function(key) {
+				return localStorage.getItem(key);
+			},
 
-            save: function (key, data) {
-               localStorage.setItem(key, data);
-            },
+			save: function(key, data) {
+				localStorage.setItem(key, data);
+			},
 
-            remove: function (key) {
-                localStorage.removeItem(key);
-            },
-            
-            clearAll : function () {
-                localStorage.clear();
-            }
-        }
-    }
-});
+			remove: function(key) {
+				localStorage.removeItem(key);
+			}
 
-app.factory('cacheService', function ($http, storageService) {
-    
-    return {
-        
-        getData: function (key) {
-            return storageService.get(key);
-        },
 
-        setData: function (key,data) {
-            storageService.save(key, data);
-            return true;
-        },
-        
-        removeData: function (key) {
-            storageService.remove(key);
-        }
-    };
+		}
+
+
+	}
+
+
 });

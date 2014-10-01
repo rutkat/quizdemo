@@ -1,4 +1,4 @@
-<h1>Enter Questions</h1>
+<h1>Enter Questions &amp; Answers</h1>
   <p>Total Questions: {{getTotal()}}</p>
 <ul>
     <li ng-repeat="q in quiz">
@@ -14,8 +14,8 @@
 </form>
 
 <div>
-	<button class="btn" ng-click="saveQuestions()">Save</button>
-    <button class="btn" ng-click="loadQuestions()">Load</button>
+	<button class="btn" ng-click="saveQuestions()" title="Saves to browser's local storage.">Save</button>
+    <button class="btn" ng-click="loadQuestions()" title="Loads from browser's local storage.">Load</button>
     <button class="btn" ng-click="clearQuestions()">Clear</button>
 </div>
 <a href="#/play" title="play">&gt;</a>    

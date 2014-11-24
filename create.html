@@ -6,7 +6,7 @@
     </li>
 </ul>
 <form name="quizForm" novalidate>
-    Question:<input type="text" ng-model="formQuestion" required ng-minlength=3 />
+    Question:<input type="text" ng-model="formQuestion" required ng-minlength=1 />
     Answer:<input type="text" ng-model="formAnswer" required ng-minlength=1 />
     <button class="btn" ng-click="addItem(formQuestion, formAnswer)">+Add</button>
     <button class="btn" ng-click="removeLast()">-Remove</button>

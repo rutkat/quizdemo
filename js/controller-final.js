@@ -8,9 +8,9 @@ app.controller('MainCtrl', function(Quiz, storageService, $scope, $timeout, $loc
       return $scope.quiz.length || 0;   
     }
     
-    $scope.addItem = function(question, answer) {
+    $scope.addItem = function() {
 
-      if(question && answer) {
+      if(formQuestion && formAnswer) {
         // push new user input into array
         $scope.quiz.push({q: $scope.formQuestion, a: $scope.formAnswer});
         $scope.formQuestion = '';

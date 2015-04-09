@@ -1,5 +1,6 @@
 var app = angular.module('myApp', ['ngRoute', 'ngAnimate']);
 
+// app.config(['$routeProvider', function ($routeProvider) {
 app.config(['$routeProvider', function ($routeProvider) {
 
   $routeProvider.when('/', { templateUrl: 'main.html', controller: 'MainCtrl' });

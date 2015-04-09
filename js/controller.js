@@ -57,6 +57,7 @@ app.controller('MainCtrl', function(Quiz, storageService, $scope, $timeout, $loc
     // answer for input comparision
     $scope.$watch("userAnswer", function( newValue ) {
           // is correct answer?
+          console.log(newValue)
         if ( $scope.isCorrect( newValue ) ) {
           $scope.myClass = 'flip-add';          
           $scope.nextQuestion();
